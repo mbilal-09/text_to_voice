@@ -1,0 +1,100 @@
+body{
+    background-color: #343d4b;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+h1{
+    color: white;
+}
+
+textarea{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+}
+
+.Btn {
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 10px black inset, 0px 5px 10px black, 0px -10px 10px black inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Btn::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(87, 87, 87);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  
+  .Btn::after {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(160, 43, 43, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
+  }
+  
+  .Btn:hover {
+    animation: jello-horizontal 0.9s both;
+  }
+  
+  @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
